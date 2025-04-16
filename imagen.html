@@ -2,37 +2,35 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Realizar Conexión a Internet</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conexión a Internet</title>
   <link rel="stylesheet" href="imagen.css">
 </head>
 <body>
   <header>
-    <h1>🌐 Realizar Conexión a Internet</h1>
-    <p>Por: Jose Artiles, Luis Emilio Ramirez y Karolay G. Javier</p>
+    <h1>Conexión a Internet</h1>
+    <p>Trabajo en grupo: José Artiles, Luis Emilio Ramírez y Karolay G. Javier</p>
   </header>
 
-  <main>
-    <section class="intro">
-      <h2>¿Cómo se realiza una conexión a Internet?</h2>
-      <p>La conexión a Internet implica el uso de tecnología como Wi-Fi, cable, o datos móviles para acceder a la red mundial. A continuación, te mostramos una galería informativa.</p>
-    </section>
-
-    <section class="galeria">
-      <h2>Galería: Conexión a Internet</h2>
-      <div class="grid">
-        <img src="img/galeria1.jpg" alt="Paso 1">
-        <img src="img/galeria2.jpg" alt="Paso 2">
-        <img src="img/galeria3.jpg" alt="Paso 3">
-        <img src="img/galeria4.jpg" alt="Paso 4">
-        <img src="img/galeria5.jpg" alt="Paso 5">
-        <img src="img/galeria6.jpg" alt="Paso 6">
-      </div>
-    </section>
+  <main class="galeria">
+    <figure>
+      <img src="conexion-internet.jpg" alt="Conexión de red inalámbrica" onclick="ampliarImagen(this)">
+      <figcaption>Conexión de Red Inalámbrica</figcaption>
+    </figure>
+    <figure>
+      <img src="internet_I03_p01c_xI.jpg" alt="Router WiFi" onclick="ampliarImagen(this)">
+      <figcaption>Router WiFi Doméstico</figcaption>
+    </figure>
+    <figure>
+      <img src="Modelo_asp.jpg" alt="Modelo ASP ProactiveOffice" onclick="ampliarImagen(this)">
+      <figcaption>Modelo ASP ProactiveOffice</figcaption>
+    </figure>
   </main>
 
-  <footer>
-    <p>&copy; 2025 - Proyecto O&M | Conexión a Internet - Grupo Grupal</p>
-  </footer>
+  <div id="modal" class="modal" onclick="cerrarModal()">
+    <span class="cerrar">X</span>
+    <img id="imagenGrande" class="modal-contenido">
+  </div>
 
   <script src="imagen.js"></script>
 </body>
