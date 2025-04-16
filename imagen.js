@@ -1,2 +1,10 @@
-// Puedes agregar funciones aquí si deseas ampliar la interactividad
-console.log("Página cargada correctamente: Conexión a Internet");
+function ampliarImagen(imagen) {
+  const modal = document.getElementById("modal");
+  const imagenGrande = document.getElementById("imagenGrande");
+  imagenGrande.src = imagen.src;
+  modal.style.display = "flex";
+}
+
+function cerrarModal() {
+  document.getElementById("modal").style.display = "none";
+}
