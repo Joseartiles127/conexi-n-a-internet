@@ -3,34 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Conexión a Internet</title>
+  <title>Conexión a Internet - Proyecto Grupal</title>
   <link rel="stylesheet" href="imagen.css">
 </head>
 <body>
   <header>
     <h1>Conexión a Internet</h1>
-    <p>Trabajo en grupo: José Artiles, Luis Emilio Ramírez y Karolay G. Javier</p>
+    <p>Proyecto grupal de Jose Artiles, Luis Emilio Ramírez y Karolay G. Javier</p>
   </header>
 
-  <main class="galeria">
-    <figure>
-      <img src="conexion-internet.jpg" alt="Conexión de red inalámbrica" onclick="ampliarImagen(this)">
-      <figcaption>Conexión de Red Inalámbrica</figcaption>
-    </figure>
-    <figure>
-      <img src="internet_I03_p01c_xI.jpg" alt="Router WiFi" onclick="ampliarImagen(this)">
-      <figcaption>Router WiFi Doméstico</figcaption>
-    </figure>
-    <figure>
-      <img src="Modelo_asp.jpg" alt="Modelo ASP ProactiveOffice" onclick="ampliarImagen(this)">
-      <figcaption>Modelo ASP ProactiveOffice</figcaption>
-    </figure>
-  </main>
+  <section class="intro">
+    <h2>¿Cómo se realiza una conexión a Internet?</h2>
+    <p>
+      Una conexión a Internet permite que computadoras, dispositivos móviles y otros equipos puedan acceder a servicios y recursos en la red global. Esta conexión puede realizarse por medio de cables (como Ethernet) o de forma inalámbrica (Wi-Fi). A continuación presentamos tres representaciones gráficas sobre cómo se establece esta conexión:
+    </p>
+  </section>
 
-  <div id="modal" class="modal" onclick="cerrarModal()">
-    <span class="cerrar">X</span>
-    <img id="imagenGrande" class="modal-contenido">
-  </div>
+  <section class="galeria">
+    <div class="imagen">
+      <img src="conexion-internet.jpg" alt="Conexión a Internet">
+      <p><strong>Imagen:</strong> conexión-internet - Muestra cómo una red se conecta a través de módem y router a Internet.</p>
+    </div>
+    <div class="imagen">
+      <img src="internet_I03_p01c_xI.jpg" alt="Router y conexiones">
+      <p><strong>Imagen:</strong> internet_I03_p01c_xI - Representación de un router inalámbrico y dispositivos conectados.</p>
+    </div>
+    <div class="imagen">
+      <img src="Modelo_asp.jpg" alt="Modelo ASP">
+      <p><strong>Imagen:</strong> Modelo_asp - Esquema de arquitectura ASP usando Internet para acceso remoto a servicios.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Proyecto para la asignatura Tecnología y Servicios de Internet - Universidad O&M</p>
+  </footer>
+
+  <script src="imagen.js"></script>
+</body>
+</html>
 
   <script src="imagen.js"></script>
 </body>
